@@ -9,6 +9,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Gravity;
@@ -177,7 +178,7 @@ public class WebActivity extends Activity {
 		ws.setBuiltInZoomControls(true);   // enable pinch
 		ws.setDisplayZoomControls(false);  // hide zoom controls
 		ws.setDomStorageEnabled(true);     // enable https
-
+		
 		File dir = getCacheDir();
 		if (!dir.exists()) {
 		  dir.mkdirs();
